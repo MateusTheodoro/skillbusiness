@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Novembro 2025</title>
+    <!-- Importa a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico para garantir consistência entre navegadores */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
+            background-color: #000; /* Fundo preto */
+            color: #fff; /* Texto branco */
+            display: flex; /* Para centralizar o calendário na tela */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ocupa a altura total da viewport */
+            padding: 20px; /* Adiciona um padding geral para telas pequenas */
+        }
+
+        .calendar-container {
+            width: 100%; /* Largura total em dispositivos móveis */
+            max-width: 420px; /* Largura máxima para telas maiores */
+            padding: 20px;
+            border-radius: 12px; /* Cantos arredondados */
+            background-color: #1a1a1a; /* Um tom de preto ligeiramente mais claro para o fundo do calendário */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+        }
+
+        .calendar-header {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem; /* Tamanho da fonte responsivo */
+            font-weight: 700; /* Negrito */
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Espaço entre mês e ano */
+        }
+
+        .calendar-header .month,
+        .calendar-header .year {
+            color: #ff0068; /* Cor rosa para o mês e ano */
+        }
+
+        .calendar-weekdays,
+        .calendar-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 colunas de largura igual */
+            gap: 8px; /* Espaçamento entre os itens da grade */
+            text-align: center;
+        }
+
+        .calendar-weekdays div {
+            font-weight: 700;
+            padding: 12px 0;
+            font-size: 0.9rem;
+            color: #bbb; /* Cor para os dias da semana */
+        }
+
+        .calendar-days .day {
+            padding: 15px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            background-color: #333; /* Fundo padrão para os dias */
+            transition: background-color 0.2s ease; /* Transição suave no hover */
+        }
+
+        .calendar-days .day:hover {
+            background-color: #555; /* Fundo mais claro ao passar o mouse */
+            cursor: pointer;
+        }
+
+        .calendar-days .empty {
+            visibility: hidden; /* Células vazias para preenchimento */
+            background-color: transparent;
+        }
+
+        /* Estilo para elementos rosa decorativos */
+        .pink-element {
+            background-color: #ff0068; /* Fundo rosa */
+            color: #fff; /* Texto branco */
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(255, 0, 104, 0.4); /* Sombra rosa para destacar */
+        }
+
+        .pink-element:hover {
+            background-color: #e0005a; /* Tom de rosa mais escuro no hover */
+        }
+
+        /* Media Queries para responsividade em telas maiores */
+        @media (min-width: 600px) {
+            .calendar-container {
+                padding: 30px;
+            }
+
+            .calendar-header {
+                font-size: 2.2rem;
+            }
+
+            .calendar-weekdays div {
+                font-size: 1rem;
+            }
+
+            .calendar-days .day {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <span class="month">Novembro</span>
+            <span class="year">2025</span>
+        </div>
+        <div class="calendar-weekdays">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+        </div>
+        <div class="calendar-days">
+            <!-- Novembro de 2025 começa em um Sábado.
+                 Portanto, precisamos de 6 células vazias antes do dia 1.
+                 (Dom=0, Seg=1, Ter=2, Qua=3, Qui=4, Sex=5, Sáb=6) -->
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            
+            <!-- Dias do mês -->
+            <div class="day pink-element">1</div> <!-- Sábado - Destaque em rosa -->
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day pink-element">30</div> <!-- Domingo - Destaque em rosa -->
+        </div>
+    </div>
+</body>
+</html>
